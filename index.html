@@ -32,7 +32,10 @@
   </nav>
 </header>
 
-<section class="hero">
+<section class="hero"> 
+<div class="logo-container">
+  <img src="logo-eliya.png" alt="Logotipo ELIYA" class="logo-img">
+</div>
   <h2>Conectando você ao seu melhor</h2>
   <p>
     Cuidado profundo, saúde capilar e tricologia especializada
@@ -110,7 +113,61 @@
   </ul>
 </section>
 
-<section id="produtos" class="section">
+<section id="produtos" class="section light">
+<div class="galeria-produtos">
+
+  <h3>Catálogo de Produtos ELIYA</h3>
+  <p>
+    Produtos desenvolvidos para complementar os cuidados
+    e protocolos realizados em consulta.
+  </p>
+
+  <div class="produtos-grid">
+
+    <div class="produto-card">
+      <img src="produto-shampoo.jpg" alt="Shampoo Terapêutico">
+      <h4>Shampoo Terapêutico</h4>
+      <p>Limpeza profunda e consciente do couro cabeludo.</p>
+    </div>
+
+    <div class="produto-card">
+      <img src="produto-tonico.jpg" alt="Tônico Capilar">
+      <h4>Tônico Capilar</h4>
+      <p>Estimula o crescimento e fortalece a raiz.</p>
+    </div>
+
+    <div class="produto-card">
+      <img src="produto-mascara.jpg" alt="Máscara Capilar">
+      <h4>Máscara de Tratamento</h4>
+      <p>Hidratação intensa e reconstrução da fibra.</p>
+    </div>
+
+    <div class="produto-card">
+      <img src="produto-vitamina.jpg" alt="Vitaminas Capilares">
+      <h4>Vitaminas Capilares</h4>
+      <p>Suplementação específica para saúde capilar.</p>
+    </div>
+
+    <div class="produto-card">
+      <img src="produto-creme.jpg" alt="Creme de Pentear">
+      <h4>Creme de Pentear</h4>
+      <p>Definição, proteção e maciez para cabelos crespos.</p>
+    </div>
+
+    <div class="produto-card">
+      <img src="produto-oleo.jpg" alt="Óleo Capilar">
+      <h4>Óleo Capilar</h4>
+      <p>Nutrição profunda e brilho natural.</p>
+    </div>
+
+    <div class="produto-card">
+      <img src="produto-serum.jpg" alt="Sérum Capilar">
+      <h4>Sérum Reparador</h4>
+      <p>Selagem das pontas e proteção térmica.</p>
+    </div>
+
+  </div>
+</section>
   <h3>Produtos ELIYA</h3>
   <p>
     Os produtos ELIYA foram desenvolvidos para acompanhar
@@ -260,8 +317,32 @@ Cardápio alimentar.</p>
   </div>
 </section>
 
-<section id="agenda" class="section">
+<section class="section"> <section class="section light">
+  <h3>Calendário de Disponibilidade</h3>
+  <p>
+    Selecione um dia disponível para atendimento.
+    Domingos não estão disponíveis.
+  </p>
+
+  <div class="calendario-box">
+    <input type="date" id="calendarioVisual">
+    <p class="nota-calendario">
+      🕒 Segunda a sexta: 08h–18h | Sábado: 08h–12h
+    </p>
+  </div>
+</section>
+
+<section class="section">
+<div class="agenda-info">
   <h3>Agendar Consulta</h3>
+
+  <p class="agenda-titulo">Horário de Atendimento</p>
+
+  <p>Segunda a sexta-feira: <strong>08h às 18h</strong></p>
+  <p>Sábado: <strong>08h às 12h</strong></p>
+  <p>Domingo: <strong>Encerrado</strong></p>
+</div>
+</div>
   <form id="agendaForm">
     <input type="text" id="nome" placeholder="Seu nome" required>
     <input type="date" id="data" required>
