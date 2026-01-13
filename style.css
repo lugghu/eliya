@@ -1,0 +1,167 @@
+:root{
+  --rosa:#f4b6c2;
+  --rosa-claro:#fde9ee;
+  --preto:#111;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  color:var(--preto);
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+}
+
+nav a{
+  margin-left:15px;
+  text-decoration:none;
+  color:var(--preto);
+}
+
+.hero{
+  text-align:center;
+  padding:100px 20px;
+  background:linear-gradient(var(--rosa-claro),#fff);
+}
+
+.logo-central{
+  font-size:48px;
+  letter-spacing:8px;
+  margin-bottom:20px;
+}
+
+.section{
+  padding:80px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.section.light{
+  background:var(--rosa-claro);
+}
+
+.btn{
+  background:var(--rosa);
+  padding:14px 30px;
+  border-radius:30px;
+  border:none;
+  text-decoration:none;
+  color:#000;
+  cursor:pointer;
+}
+
+.galeria-produtos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+
+.produto-card{
+  background:#fff;
+  border-radius:16px;
+  padding:20px;
+  text-align:center;
+}
+
+.produto-card img{
+  width:100%;
+  border-radius:14px;
+}
+
+.preco-card{
+  background:#fff;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:12px;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  background: #f4a7b9; /* rosa elegante, combina com o site */
+  color: #fff;
+  font-size: 20px;     /* tamanho do ícone */
+  width: 48px;         /* largura do botão */
+  height: 48px;        /* altura do botão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.logo-img {
+  height: 55px;
+  width: auto;
+}/* ===== CATÁLOGO DE PRODUTOS – PADRÃO ELIYA ===== */
+
+#produtos {
+  background: #fde9ee; /* mesmo rosa suave da tabela */
+  padding: 60px 20px;
+}
+
+#produtos h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#produtos p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+#produtos .produto-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  margin: 0 auto 25px;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+#produtos .produto-card h4 {
+  margin-top: 0;
+  color: #c97b8a; /* rosa elegante */
+}
+
+#produtos .produto-card p {
+  text-align: left;
+  margin: 0;
+}/* ===== BOTÃO WHATSAPP – ELIYA ===== */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #f3b5c6, #d98ca4);
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(217, 140, 164, 0.4);
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 35px rgba(217, 140, 164, 0.6);
+}
